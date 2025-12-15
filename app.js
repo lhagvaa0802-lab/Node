@@ -1,40 +1,25 @@
-// function add(a, b) {
-//   return a + b;
-// }
+const {add, subtract} = require('./math');
 
-// console.log(add(5, 1));
+console.log(add(5, 3)); // 8
+console.log (subtract(5, 3)) // 2
 
-// function subtract(a, b) {
-//   return a - b;
-// }
 
-// console.log(subtract(5, 1));
+const {sayHello} = require('./greething');
+console.log(sayHello()); // "Hello"
 
-// module.exports = {
-//   add: add,
-//   subtract: subtract,
-// };
+const { isEven } = require("./numberCheck");
+console.log(isEven(5));
 
-// const print = () => {
-//   console.log("Say hello");
-// };
 
-// module.exports = { print };
 
-// const isEven = (a) => {
-//   if (a % 2 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
-// module.exports = { isEven };
+const {toUpper, wordLength} = require('./textUtils')
 
-const toUpper = (text) => {
-  return text.toUpperCase();
-};
-const tolength = (text) => {
-  return text.length;
-};
+console.log(toUpper("hello")); // "HELLO"
+console.log(wordLength("hello")); // 5
 
-module.exports = { toUpper, tolength };
+
+
+
+const {isAdult} = require('./ageCheck');
+console.log(isAdult(20)); // "Adult"
+console.log(isAdult(25)); // "Minor"

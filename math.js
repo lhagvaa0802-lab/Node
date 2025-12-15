@@ -1,4 +1,7 @@
-const { toUpper, tolength } = require("./app");
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
 
-console.log(toUpper("doooo"));
-console.log(tolength("doooo"));
+module.exports = {
+  add:add,
+  subtract:subtract,
+};
