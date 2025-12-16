@@ -49,19 +49,19 @@ const fs= require('fs');
 //     console.log('File deleted successfully');
 // })
 
-const data ="This is data"
-fs.mkdir('./data',(error)=>{
-    if(error){
-        console.log('Error creating directory:', error);
-        return
-    }else{
-        fs.writeFile('./data/info.txt',data,(error)=>{
-            if(error){
-                console.log('Error writing file:', error);
-            }else{
-                console.log('File written successfully');
-            }
-        })     
-    }
-})
+// const data ="This is data"
+// fs.mkdir('./data',(error)=>{
+//     if(error){
+//         console.log('Error creating directory:', error);
+//         return
+//     }else{
+//         fs.writeFile('./data/info.txt',data,(error)=>{
+//             if(error){
+//                 console.log('Error writing file:', error);
+//             }else{
+//                 console.log('File written successfully');
+//             }
+//         })     
+//     }
+// })
  
